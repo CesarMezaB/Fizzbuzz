@@ -13,4 +13,10 @@ describe("Test para FizzbuzzService", () =>{
         expect(explorerFizz).toMatchObject({name: "Explorer3", score: 3, trick: "FIZZ"});
     });
 
+    test("Requerimiento 3", () => {
+        const explorer5 = {name: "Explorer5", score: 5}
+        const explorerFizz = FizzbuzzService.applyValidationInExplorer(explorer5);
+        expect(explorerFizz).toMatchObject({name: "Explorer5", score: 5, trick: "BUZZ"});
+    });
+
 });
