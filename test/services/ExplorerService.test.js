@@ -18,5 +18,19 @@ describe("Test para ExplorerService", () =>{
         console.log(explorersInMission);
         expect(explorersInMission).toBe(10);
     });
+
+    test("Requerimiento 3: Obtener los nombres de usuario del explorador en Node", ()=>{
+        const explorers= [
+            {
+                "name": "Woopa1",
+                "githubUsername": "ajolonauta1",
+                "score": 1,
+                "mission": "node"   
+            }];
+        const explorerName = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+        expect(explorerName).toMatchObject( /"ajolonauta1"/);
+
+
+    });
     
 });
