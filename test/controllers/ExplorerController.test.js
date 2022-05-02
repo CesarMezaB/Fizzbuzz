@@ -11,5 +11,9 @@ describe("Test para ExplorerService", () =>{
         const explorerByMission = ExplorerController.getExplorersByMission("node");
         expect(explorerByMission[1].githubUsername).toBe("ajolonauta2");  
     });
+    test("Requerimiento 3: cantidad de explorers que están en node", () => {
+        const explorersInMission = ExplorerController.getExplorersAmonutByMission("node")
+        expect(explorersInMission).toBe(10);
+    });
     
 });
