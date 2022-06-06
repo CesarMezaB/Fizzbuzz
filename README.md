@@ -102,3 +102,11 @@ Creación sel server:
 |` localhost:3000/v1/explorers/amount/:mission ` |  `localhost:3000/v1/explorers/amount/node` | Obtiene la cantidad de explorers según la misión que se envia (node o java) |
 |`localhost:3000/v1/explorers/usernames/:mission`|`localhost:3000/v1/explorers/usernames/node`| Obtiene una lista de usernames en la misión que se envia (node o java)|
 
+## Bot Telegram
+Este proyecto se comunica con un bot de telegram para esto debes tener los siguintes puntos:
+1. Descargar y crear una cuenta de telegram
+1. Accede a Bot Farher: https://telegram.me/BotFather
+1. En el chat del bot father envia el texto: `/newbot`
+1. Ahora nombre el bot pude ser lo siguiente: `FizzbuzzLaunchXBot`
+1. Te dara un token, guardalo muy bien
+1. Ahora te dara una url para abrir el nuevoo chat con tu bot, enseguida presiona START
