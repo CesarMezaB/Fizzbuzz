@@ -82,3 +82,23 @@ Los comando de eslint están automatizados en el archivo **Package.json**
   },
 
 ```
+## API con express
+Primeras clases creadas:
+
+![image](https://user-images.githubusercontent.com/99105052/172252490-53be864a-178c-4faa-a7d0-094cb5cc0074.png)
+
+Clase que permite extender un puente entre funcionalidad y el server que se creo:
+
+![image](https://user-images.githubusercontent.com/99105052/172252999-cc908faf-7e5e-47ef-b5c7-b1f17917f8d3.png)
+
+Creación sel server:
+
+![image](https://user-images.githubusercontent.com/99105052/172253321-f5370ed4-686e-4efb-b94e-0359fee6cc3b.png)
+
+
+|Endpoint|Request|Response|
+| ------------ | ------------ |------------ |
+|` localhost:3000/v1/explorers/:mission`  | `localhost:3000/v1/explorers/node`  |Obtiene una lista de explorers en la misión que se envia (node o java)|
+|` localhost:3000/v1/explorers/amount/:mission ` |  `localhost:3000/v1/explorers/amount/node` | Obtiene la cantidad de explorers según la misión que se envia (node o java) |
+|`localhost:3000/v1/explorers/usernames/:mission`|`localhost:3000/v1/explorers/usernames/node`| Obtiene una lista de usernames en la misión que se envia (node o java)|
+
